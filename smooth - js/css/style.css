@@ -1,0 +1,101 @@
+html,body {
+	padding: 0;
+	margin: 0;
+	font-family: Arial;
+	color: #fff;
+	overflow: hidden;
+}
+
+nav {
+	position: fixed;
+	width: 8em;
+	height: 100vh;
+	display: grid;
+	align-content: center;
+}
+
+.nav__alle-items {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.nav__menuitem {
+	padding: .5em;
+	background: #333;
+	margin: .5em 0;
+	text-align: right;
+	border-left: white 0px solid;
+	transition: border-width 0.3s;
+	border-radius: 0 3em 3em 0;
+}
+
+.nav__menuitem:hover {
+	cursor: pointer;
+	border-width: 7px;
+}
+
+.nav__pijlen {
+	font-size: 50px;
+	padding: 10px;
+}
+
+.nav__pijl {
+	float: left;
+}
+
+.nav__icon {
+	color: #333;
+	margin: 0 1em;
+	transition: color 0.3s;
+}
+
+.nav__menuitem.nav--actief .nav__icon {
+	color: white;
+}
+
+.inhoud {
+	width: 500vw;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	transition: margin-left .623s;
+}
+
+.inhoud__pagina {
+	height: 100vh;
+	box-sizing: border-box;
+	padding: 1em 1em 1em 9em;
+	display: grid;
+	align-content: center;
+	justify-content: center;
+}
+
+.inhoud__pagina--veel {
+	display: block;
+	overflow-y: auto;
+}
+
+.inhoud__afb {
+	max-width: 80%;
+}
+
+.inhoud--rood { 
+	background: darkred;
+}
+
+.inhoud--groen { 
+	background: lightgreen;
+}
+
+.inhoud--geel { 
+	background: rgb(255, 255, 70); color: darkgray;
+}
+
+.inhoud--blauw { 
+	background: skyblue;
+	overflow: scroll;
+}
+
+.inhoud--oranje { 
+	background: orangered;
+}
